@@ -45,12 +45,10 @@ function getData(e) {
       });
     });
 }
-
 function markupCountriesList(countries) {
   refs.output.innerHTML = countryOne(countries);
 }
 function markupCountryCard(countries) {
   refs.output.innerHTML = countryAll(countries);
 }
-
 refs.input.addEventListener('input', debounce(getData, 500));
